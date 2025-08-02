@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix - Your Premium Streaming Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">StreamFlix</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bell"></i>
+                <div class="profile-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#categories" class="mobile-link">Categories</a>
+            <a href="#about" class="mobile-link">About</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Stranger Things</h1>
+            <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i> More Info
+                </button>
+            </div>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="content">
+        <!-- Trending Now -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Trending Now</h2>
+                <span class="see-all">See All <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="content-carousel" id="trending-carousel">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Top Rated -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Top Rated Series</h2>
+                <span class="see-all">See All <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="content-carousel" id="top-rated-carousel">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Action Movies -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Action Movies</h2>
+                <span class="see-all">See All <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="content-carousel" id="action-carousel">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Anime Series -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Anime Series</h2>
+                <span class="see-all">See All <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="content-carousel" id="anime-carousel">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Drama Movies -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Drama Movies</h2>
+                <span class="see-all">See All <i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="content-carousel" id="drama-carousel">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h1>Browse Categories</h1>
+                <p>Discover amazing content organized by your favorite genres and themes.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <h3>Trending Now</h3>
+                    <p>The hottest content everyone is watching</p>
+                </div>
+                <div class="category-item">
+                    <h3>Top Rated</h3>
+                    <p>Critically acclaimed series and movies</p>
+                </div>
+                <div class="category-item">
+                    <h3>Action & Adventure</h3>
+                    <p>High-octane thrills and excitement</p>
+                </div>
+                <div class="category-item">
+                    <h3>Drama</h3>
+                    <p>Compelling stories and character-driven narratives</p>
+                </div>
+                <div class="category-item">
+                    <h3>Anime</h3>
+                    <p>Japanese animation for all ages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h1>About StreamFlix</h1>
+                <p>StreamFlix is the world's leading streaming entertainment service with over 200 million paid memberships in more than 190 countries.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">200M+</div>
+                    <div class="stat-label">Active Subscribers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">190+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Titles Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Languages Supported</div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-play-circle"></i>
+                    <h3>Unlimited Streaming</h3>
+                    <p>Watch as much as you want, whenever you want, without ads.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Watch Everywhere</h3>
+                    <p>Stream on your phone, tablet, laptop, and TV without paying more.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Enjoy content in 4K Ultra HD with immersive sound quality.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Content</h3>
+                    <p>Access content from around the world in multiple languages.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Multiple Profiles</h3>
+                    <p>Create profiles for different family members with personalized recommendations.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Award-Winning Originals</h3>
+                    <p>Exclusive original series and movies you can't find anywhere else.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StreamFlix</h3>
+                    <p>Your premium destination for the world's best entertainment content.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StreamFlix. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
